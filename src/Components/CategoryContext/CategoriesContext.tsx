@@ -1,6 +1,6 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, ReactNode } from 'react';
 
-type Category = {
+export type Category = {
   id: number;
   name: string;
   children: Category[];
@@ -9,7 +9,7 @@ type Category = {
 type CategoryContextType = {
   categories: Category[];
   addCategory: (categoryName: string, parentCategory?: Category) => void;
-  removeCategory: (category: Category) => void; // Додано функцію видалення
+  removeCategory: (categoryId: number) => void;
 };
 
 const CategoryContext = createContext<CategoryContextType | undefined>(undefined);

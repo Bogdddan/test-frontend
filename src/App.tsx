@@ -1,5 +1,4 @@
 // App.tsx
-import React from 'react';
 import Draggable from "react-draggable";
 import Categories from './Components/Categories/Categories';
 import Header from './Components/Header/Header';

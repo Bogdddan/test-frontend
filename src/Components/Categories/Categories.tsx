@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useCategory } from '../CategoryContext/CategoriesContext';
 import './Categories.css'; // Імпортуйте стилі з файлу Categories.css
+import { Category } from '../CategoryContext/CategoriesContext';
 
 type CategoryProps = {
   category: Category;
@@ -20,7 +21,7 @@ function Category({ category }: CategoryProps) {
   };
 
   const handleRemoveCategory = () => {
-    removeCategory(id);
+    removeCategory(category.id);
   }
 
   return (
@@ -55,7 +56,7 @@ function Category({ category }: CategoryProps) {
       </div>
       <div className="category-children">
         {category.children.map((child: { name: React.Key | null | undefined; }) => (
-          <Category key={child.name} category={child} />
+          <Category key={child.name} category={child as Category} />
         ))}
       </div>
     </div>
