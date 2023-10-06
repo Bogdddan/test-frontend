@@ -33,7 +33,6 @@ const Header: React.FC = () => {
     };
   }, []);
 
-  // Застосування зміни масштабу до кореневого елементу
   useEffect(() => {
     document.documentElement.style.fontSize = `${scale * 100}%`;
   }, [scale]);
