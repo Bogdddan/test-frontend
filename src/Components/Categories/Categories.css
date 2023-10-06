@@ -1,0 +1,64 @@
+/* Categories.css */
+button{
+    background-color: transparent;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: move;
+    background-color: transparent;
+    /* padding-top:  20px; */
+    border: 1px solid #ccc;
+    width: max-content;
+  }
+  
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .category {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    height: max-content;
+  }
+  
+  .category-children {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .category-children > .category {
+    margin: 5px;
+  }
+  
+  .buttonAdd{
+    display: flex;
+    align-items: baseline;
+    /* width: 40px;
+    height: 40px; */
+  }
+  
+
+  /* Додайте стилі для ліній */
+.category-line {
+    position: absolute;
+    border-left: 2px solid #000; /* Колір та стиль лінії можна налаштувати за власним бажанням */
+    z-index: -1; /* Позиціонувати лінію позаду контенту */
+  }
+  
+  .plus{
+    /* color: black;
+     */
+     fill: black;
+  }
+
+  .burronAdd{
+    margin-left: 10px;
+  }

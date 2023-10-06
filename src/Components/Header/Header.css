@@ -1,0 +1,13 @@
+.header{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid black;
+}
+
+.servic{
+    font-size: 30px;
+    font-weight: 400;
+}
